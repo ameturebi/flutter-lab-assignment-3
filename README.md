@@ -1,16 +1,42 @@
-# flutter_projects
+# Flutter Lab Assignment 3
 
-A new Flutter project.
+This Flutter application fetches and displays a list of albums and photos from the [JSONPlaceholder API](https://jsonplaceholder.typicode.com). The app demonstrates clean architecture using the MVVM pattern, Bloc state management, GoRouter for navigation, and proper error handling.
 
-## Getting Started
+## 🚀 Features
 
-This project is a starting point for a Flutter application.
+- Fetch albums and photos from remote API
+- Display albums in a scrollable list
+- Navigate to a detail screen on item tap
+- Show full album details including photo
+- Loading and error states with retry option
 
-A few resources to get you started if this is your first Flutter project:
+## 🧱 Architecture
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+This app is structured using the MVVM (Model-View-ViewModel) architecture:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Model**: Defines the data structure for Album and Photo
+- **View**: UI components built using Flutter widgets
+- **ViewModel (Bloc)**: Handles logic, state management, and API calls
+
+## 📦 Tech Stack
+
+| Layer            | Technology                     |
+|------------------|--------------------------------|
+| UI               | Flutter Widgets                |
+| Networking       | `http` package (httpClient)    |
+| State Management | Bloc                           |
+| Navigation       | GoRouter                       |
+| Architecture     | MVVM                           |
+
+## 🔗 API Endpoints
+
+- Albums: [`https://jsonplaceholder.typicode.com/albums`](https://jsonplaceholder.typicode.com/albums)
+- Photos: [`https://jsonplaceholder.typicode.com/photos`](https://jsonplaceholder.typicode.com/photos)
+
+## 🧪 Error Handling
+
+- Displays error messages when network fails
+- Retry button allows users to re-fetch data
+
+## 📂 Folder Structure
+
